@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desrciption</title>
+
+    <!-- FontAwesome  -->
+    <script src="https://kit.fontawesome.com/fe7cbc452e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Description.css">
+
+
+</head>
+
+<body>
+    <!-- Men's Section -- Gym -- Gym Shoes 1 -->
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                    <div class="small-images">
+                        <img src="image 1.png"
+                            style="height: 100px; width: 100px;" onclick="clickimg(this)"><br>
+                        <img src="image 2.png"
+                            style="height: 100px; width: 100px;" onclick="clickimg(this)"><br>
+                        <img src="image 3.png"
+                            style="height: 100px; width: 100px;" onclick="clickimg(this)"><br>
+                    </div>
+
+                    <div class="main-images">
+                        <img src="image 1.png"
+                            style="height: 500px; width: 500px;" id="imagebox">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand: Puma</p>
+                    <h2>Puma DriftCat Mercedes Amg Petronous</h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"></span>
+                    </div><br><br>
+                    <div class="price-box">
+                        <p class="price">&#8377; 2,300</p>
+                        <strike>&#8377; 4,000</strike>
+                    </div>
+                    <p>Size : <select name="size">
+                            <option value="select size">Select Size</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                        </select></p>
+
+                    <p>Quantity <input type="number" value="1"></p>
+                    <button>
+                        <span class="fa fa-shopping-cart"></span>
+                        Add to Cart
+                    </button>
+                    <button class="buy">
+                        <span class="fa fa-shopping-cart"></span>
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        function clickimg(smallImg) {
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src
+        }
+    </script>
+
+</body>
+
+</html>
